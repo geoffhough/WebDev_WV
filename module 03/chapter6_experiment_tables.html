@@ -9,10 +9,11 @@
     <h1>Let's explore TABLES</h1>
     <hr />
     <p>
-      below we have a 3x3 table. it has 3 <strong>"tr"</strong> tag pairs.
+      below we have a 3x3 table. it has 3 <strong>"tr"</strong> tag pairs (Table
+      Row).
       <br />
       and in each "tr" section are 3 <strong>"td"</strong> tag pairs (so 3
-      columns).
+      columns of Table Data).
     </p>
     <table>
       <tr>
@@ -34,33 +35,174 @@
     <br />
     <p>
       you can substitue <strong>"th"</strong> tags for "tr" tags, and you <br />
-      will get column and red headings.
+      will get column and row Table Headings. for sake of informing readers,<br />
+      we can add the "Scope" attribure to our th's
     </p>
 
     <table>
       <tr>
         <th></th>
-        <th>Col A</th>
-        <th>Col B</th>
-        <th>Col C</th>
+        <th scope="col">Col A</th>
+        <th scope="col">Col B</th>
+        <th scope="col">Col C</th>
       </tr>
       <tr>
-        <th>Row 1</th>
+        <th scope="row">Row 1</th>
         <td>1A</td>
         <td>2B</td>
         <td>3C</td>
       </tr>
       <tr>
-        <th>Row 2</th>
+        <th scope="row">Row 2</th>
         <td>2A</td>
         <td>2B</td>
         <td>2C</td>
       </tr>
       <tr>
-        <th>Row 3</th>
+        <th scope="row">Row 3</th>
         <td>3A</td>
         <td>3B</td>
         <td>3C</td>
+      </tr>
+    </table>
+    <br />
+    <p>
+      Let's do the table above one more time, but now with a border. <br />
+      this is usually done with CSS nowadays.
+    </p>
+
+    <table border="4">
+      <tr>
+        <th></th>
+        <th scope="col">Col A</th>
+        <th scope="col">Col B</th>
+        <th scope="col">Col C</th>
+      </tr>
+      <tr>
+        <th scope="row">Row 1</th>
+        <td>1A</td>
+        <td>2B</td>
+        <td>3C</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 2</th>
+        <td>2A</td>
+        <td>2B</td>
+        <td>2C</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 3</th>
+        <td>3A</td>
+        <td>3B</td>
+        <td>3C</td>
+      </tr>
+    </table>
+    <br />
+
+    <p>
+      Let's do the table above again, but now with a background color <br />
+      for entire table using a "hex" color. this is usually done with CSS
+      nowadays. <br />
+      you could add the color attribute to td's or tr's too
+    </p>
+
+    <table border="4" bgcolor="dddddd">
+      <tr>
+        <th></th>
+        <th scope="col">Col A</th>
+        <th scope="col">Col B</th>
+        <th scope="col">Col C</th>
+      </tr>
+      <tr bgcolor="aaaaaa">
+        <th scope="row">Row 1</th>
+        <td>1A</td>
+        <td>2B</td>
+        <td>3C</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 2</th>
+        <td>2A</td>
+        <td>2B</td>
+        <td>2C</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 3</th>
+        <td>3A</td>
+        <td>3B</td>
+        <td bgcolor="aaaaaa">3C</td>
+      </tr>
+    </table>
+    <br />
+
+    <p>
+      Let's do the table above again, but now with Spanningr <br />
+      of a column and a row this is usually done with CSS nowadays.
+    </p>
+
+    <table border="4" bgcolor="dddddd">
+      <tr>
+        <th></th>
+        <th scope="col">Col A</th>
+        <th scope="col">Col B</th>
+        <th scope="col">Col C</th>
+      </tr>
+      <tr bgcolor="aaaaaa">
+        <th scope="row">Row 1</th>
+        <td colspan="2">1A and B</td>
+
+        <td>3C</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 2</th>
+        <td>2A</td>
+        <td>2B</td>
+        <td rowspan="2" bgcolor="ffffff">2C</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 3</th>
+        <td>3A</td>
+        <td>3B</td>
+      </tr>
+    </table>
+    <br />
+
+    <p>
+      Let's do the table above again, but now with Cellpadding and <br />
+      Cellspacing, and defined Width for entire table. this is usually done with
+      CSS nowadays. <br />
+      you could add the color attribute to th's too
+    </p>
+
+    <table
+      cellspacing="20"
+      bgcolor="dddddd"
+      width="400"
+      cellpadding="5"
+      border="4"
+    >
+      <tr>
+        <th width="150"></th>
+        <th scope="col">Col A</th>
+        <th scope="col">Col B</th>
+        <th scope="col">Col C</th>
+      </tr>
+      <tr bgcolor="aaaaaa">
+        <th scope="row">Row 1</th>
+        <td>1A</td>
+        <td>2B</td>
+        <td>3C</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 2</th>
+        <td>2A</td>
+        <td>2B</td>
+        <td>2C</td>
+      </tr>
+      <tr>
+        <th scope="row">Row 3</th>
+        <td>3A</td>
+        <td>3B</td>
+        <td bgcolor="aaaaaa">3C</td>
       </tr>
     </table>
     <br />
