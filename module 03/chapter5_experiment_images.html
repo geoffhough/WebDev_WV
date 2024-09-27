@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter_5_Concepts</title>
+  </head>
+  <body>
+    <h2>Let's insert some images on this page</h2>
+    <hr />
+    <p>
+      the <strong>image tag</strong> is single tag with attributes within it,
+      <br />namely scr="image_location" and
+      alt="description_of_image_for_readers"
+    </p>
+      if you want a clickable image, place the entire image tag within anchor
+      tags that include an href
+    </p>
+    <br />
+    <h3>here are some arrangements of images and nearby text</h3>
+    <a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"
+      ><img
+        src="images_folder/300wx300h.png"
+        alt="image of the html3 logo"
+        width="50"
+        height="50"
+    /></a>
+    <p>
+      (1) here we have an image blocked just before a paragraph.
+      <em>go ahead, click on it!</em>
+    </p>
+    <p>
+      <img
+        src="images_folder/300wx300h.png"
+        alt="image of the html3 logo"
+        width="50"
+        height="50"
+      />(2) here we have an image at the beginning and within a paragraph
+    </p>
+    <p>
+      (3) here we have an image
+      <img
+        src="images_folder/300wx300h.png"
+        alt="image of the html3 logo"
+        width="50"
+        height="50"
+      />
+      within a paragraph
+    </p>
+    <hr />
+    <br />
+    <p>
+      (4) here we have an image
+      <img
+        src="images_folder/300wx300h.png"
+        alt="image of the html3 logo"
+        width="50"
+        height="50"
+        align="top"
+      />
+      within a paragraph and the "align" attribue set to TOP
+    </p>
+    <p>
+      (5) here we have an image
+      <img
+        src="images_folder/300wx300h.png"
+        alt="image of the html3 logo"
+        width="50"
+        height="50"
+        align="middle"
+      />
+      within a paragraph and the "align" attribue set to MIDDLE
+    </p>
+    <p>
+      (6) here we have an image
+      <img
+        src="images_folder/300wx300h.png"
+        alt="image of the html3 logo"
+        width="50"
+        height="50"
+        align="bottom"
+      />
+      within a paragraph and the "align" attribue set to BOTTOM
+    </p>
+    <hr />
+    <br />
+    <p>
+      (7) here we have an image
+      <img
+        src="images_folder/400wx300h.jpg"
+        alt="image of a bear"
+        width="160"
+        height="120"
+        align="left"
+      />
+      within a paragraph and the "align" attribue set to LEFT. <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempora
+      aperiam cupiditate eveniet quas in aliquam assumenda possimus commodi,
+      sapiente nulla voluptates mollitia dignissimos dolore fuga deserunt?
+      Ratione, culpa itaque.
+    </p>
+    <br />
+    <br />
+    <p>
+      (8) here we have an image
+      <img
+        src="images_folder/400wx300h.jpg"
+        alt="image of a bear"
+        width="160"
+        height="120"
+        align="right"
+      />
+      within a paragraph and the "align" attribue set to RIGHT. <br />
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate tempora
+      aperiam cupiditate eveniet quas in aliquam assumenda possimus commodi,
+      sapiente nulla voluptates mollitia dignissimos dolore fuga deserunt?
+      Ratione, culpa itaque.
+    </p>
+    <br />
+    <p>
+      (9) here we have an image with a caption using the "figure" and
+      "figcaption" tags
+    </p>
+    <figure>
+      <img
+        src="images_folder/400wx300h.jpg"
+        alt="image of a bear"
+        width="240"
+        height="160"
+      />
+      <figcaption>Caption - A Bear Catches a Fish</figcaption>
+    </figure>
+    <hr />
+    <br />
+    <p>this is an animated GIF file. let's see what happens</p>
+    <img src="images_folder/cheers.gif" alt="gumby" title="Gumpy and Pony" />
+  </body>
+</html>
+
+<!--
+Take-home ideas from this chapter:
+
+<img src="images/pics.jpg" alt="Theses are a collection of the main pics"  /> 
+
+must use these two attributes in an <img/> tag
+
+src
+
+alt
+
+ 
+
+A super important detail that the book doesn't mention in chapter 5 is that you turn your pictures into clickable links!
+
+syntax for something like this would be:
+
+<p>Click on this image</p>
+
+<a href="somewhere.com"><img src="image/cats.jpg"/> </a>
+
+You'll get a chance to try it in your assignment. 
+
+-->
