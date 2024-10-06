@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chap8and9_ModifiedChap7_Welcome_Form</title>
+  </head>
+  <body>
+    <br id="top" />
+    <!-- wrap this in a div and add style="border: 2px solid 
+     purple;" in the opening Div tag ...  START DIV HERE-->
+    <div style="border: 2px solid purple">
+      <p>Hi, <strong>Welcome to WVC !</strong></p>
+      <br />
+      <p>Log in first to get the best use out of this site:</p>
+
+      <form action="https://geoffhough.com/">
+        <p>
+          Enter your username :
+          <input
+            type="text"
+            name="username"
+            size="15"
+            maxlength="30"
+            placeholder="username"
+          />
+        </p>
+        <p>
+          Enter your password (required) :
+          <input
+            type="password"
+            name="password"
+            size="15"
+            maxlength="30"
+            placeholder="password"
+            required="required"
+          />
+        </p>
+        <p>Click here : <button>Submit</button></p>
+      </form>
+      <!-- Close Div tag HERE-->
+    </div>
+    <br />
+    <!-- your CLICK HERE should take the user
+      to the video.html page - make sure they can get back! -->
+    <p>
+      After you've logged in, <a href="video.html">CLICK HERE</a> to watch a
+      video or listen to some music!
+    </p>
+    <br />
+    <!-- inside the img tag, add a border like this
+      <img style="border: 2px solid orange;>"-->
+    <img
+      src="images/university.jpg"
+      width="720"
+      height="480"
+      style="border: 2px solid orange"
+      alt="university building"
+    />
+    <br />
+    <!-- wrap this below in a div and add 
+     style="border: 2px solid green;" in the
+      opening Div tag ...  START -->
+    <div style="border: 2px solid green">
+      <h2>About the School</h2>
+      <p>
+        We are the best at what we do! From the arts to the sciences, we've got
+        you covered. <br />
+        Here you will find all the information you need:
+      </p>
+      <ul>
+        <li>Course List</li>
+        <li>How to sign up for classes</li>
+        <li>Resource Centers</li>
+        <li>Faculty List</li>
+        <li>Campus Map</li>
+      </ul>
+      <!-- Close Div tag-->
+    </div>
+    <br />
+    <!-- add an iframe tag here - you can use exact code from page 189-->
+    <iframe
+      width="450"
+      height="350"
+      src="https://maps.google.com/maps?q=west+valley+college+saratoga&amp;output=embed"
+    >
+    </iframe>
+    <!-- wrap this below in a div and add style="border: 2px solid pink;"
+  in the opening Div tag ...  START -->
+    <div style="border: 2px solid pink">
+      <p>
+        Still need more information? No worries! Feel free to use our search bar
+        below!
+      </p>
+      <form action="https://geoffhough.com/" method="get">
+        <input type="search" name="search" placeholder="Search Term" />
+        <button>Submit</button>
+      </form>
+      <br />
+      <!-- Close Div tag-->
+    </div>
+    <br />
+
+    <!-- wrap this below in a div and add style="border: 2px solid red;" 
+     in the opening Div tag ...  START -->
+    <div style="border: 2px solid red">
+      <h2>Join our Mailing List!</h2>
+      <p>
+        If you join our mailing list, you will get exclusive information
+        regarding
+        <br />
+        upcoming events, assignments, and well... more events! Be the first to
+        be “in the know”. <br />
+        We promise not to spam you. <em>Really.</em>
+      </p>
+      <form action="https://geoffhough.com/" method="post">
+        <label for="user_email"> Please enter your email address:</label>
+        <input
+          type="email"
+          name="email_address"
+          size="25"
+          maxlength="40"
+          placeholder="email address"
+        /><button>Submit</button>
+      </form>
+      <br />
+      <!-- Close Div tag-->
+    </div>
+
+    <br />
+    <h2>Tells us about yourself!</h2>
+
+    <!-- wrap this below in a div and add style="border: 2px solid blue;" 
+ in the opening Div tag ...  START -->
+    <div style="border: 2px solid blue">
+      <p>
+        <b>1)</b> What kind of music applications do you like using while
+        studying or on the go? <br />
+        You can choose more than one music streaming application:
+      </p>
+      <form action="https://geoffhough.com/" method="get">
+        <input
+          type="checkbox"
+          name="streaming_app"
+          value="Spotify"
+          checked="checked"
+        />Spotify
+        <input type="checkbox" name="streaming_app" value="iTunes" />iTunes
+        <input type="checkbox" name="streaming_app" value="Napster" />Napster
+      </form>
+
+      <!-- Close Div tag-->
+    </div>
+
+    <br />
+
+    <!-- wrap this below in a div and add style="border: 2px solid black;"
+      in the opening Div tag ...  START -->
+    <div style="border: 2px solid black">
+      <p><b>2)</b> Which is your favorite style of music?</p>
+      <form action="https://geoffhough.com/" method="get">
+        <input type="radio" name="genre" value="Rock" checked="checked" />Rock
+        <input type="radio" name="genre" value="Jazz" />Jazz
+        <input type="radio" name="genre" value="Classical" />Classical
+      </form>
+
+      <!-- Close Div tag-->
+    </div>
+
+    <br />
+
+    <!-- wrap this below in a div and add style="border: 2px solid orange;"
+  in the opening Div tag ...  START -->
+    <div style="border: 2px solid orange">
+      <p>
+        <b>3)</b> Are you a MacOS, Windows, or Linux user? As you browse the
+        internet,
+        <br />
+        which kind of computer OS are you using??
+      </p>
+
+      <form action="https://geoffhough.com/" method="get">
+        <select name="computer_os">
+          <option value="windows">Windows</option>
+          <option value="mac_os" selected="selected">Mac OS</option>
+          <option value="linux">Linux</option>
+        </select>
+      </form>
+      <br />
+      <!-- Close Div tag-->
+    </div>
+
+    <br />
+
+    <!-- wrap this below in a div and add style="border: 2px solid purple;" 
+     in the opening Div tag ...  START -->
+    <div style="border: 2px solid purple">
+      <h2>Add an image for your profile!</h2>
+      <img
+        src="images/student.jpg"
+        width="390"
+        height="260"
+        border="1"
+        alt="picture of student"
+      />
+      <br />
+      <p>Please upload a picture of yourself :</p>
+      <form action="https://geoffhough.com/" method="post">
+        <input type="file" name="favorite_image" /><br />
+        <input type="submit" value="Upload" />
+      </form>
+      <br />
+      <!-- Close Div tag-->
+    </div>
+
+    <br />
+
+    <h2>Contact?</h2>
+
+    <fieldset>
+      <legend>Please use the form below :</legend>
+      <form action="https://geoffhough.com/" method="get">
+        <p>
+          Please enter your first name :
+          <input
+            type="text"
+            name="first_name"
+            size="15"
+            maxlength="30"
+            placeholder="First Name"
+          />
+        </p>
+        <p>
+          Please enter your last name :
+          <input
+            type="text"
+            name="last_name"
+            size="15"
+            maxlength="30"
+            placeholder="Last Name"
+          />
+        </p>
+        <p>
+          Please enter your email address :
+          <input
+            type="email"
+            name="email_address"
+            size="15"
+            maxlength="30"
+            placeholder="Email"
+          />
+        </p>
+      </form>
+    </fieldset>
+    <br />
+    <br />
+
+    <h2>Set a date when you can visit the campus!</h2>
+    <form action="https://geoffhough.com/" method="post">
+      <label for="visit_date">
+        Please select that date you'd like to visit :</label
+      >
+      <input type="date" name="visit_date" />
+      <input type="submit" value="Submit" />
+    </form>
+    <br /><br />
+    <br /><br />
+    <h3>Thanks for letting us get to know each other.</h3>
+    <a href="#top">Return to top</a>
+    <br /><br />
+  </body>
+</html>
+
+<!-- Details:
+
+1st page (and only page for this assignment)
+
+index.html -- this will be the main info page where you will do all of your work.
+
+ 
+
+More Notes: 
+
+YOU ARE ALLOWED TO USE THE SAME CODE FROM THE BOOK! :)
+
+Certain sections will have page numbers as to where the code is found - feel free and use that exact code (unless otherwise written in the comments of the assignment).
+
+You will need to choose how you want to approach each section! Use what you already know while adding
+ a few more techniques. If you feel a bit stuck, refer back to the chapter lectures or the book, as this assignment is structured from it. 
+
+The assignment is below!
+
+ 
+
+ 
+
+ASSIGNMENT
+ 
+
+Hi, Welcome to WVC  
+
+ 
+
+Log in first to get the best use out of this site: 
+
+  
+
+Username:  <!- use the <input> tag as seen on page 153 to get it going, then be sure to use the "placeholder"
+ attribute as seen on page 168->
+
+Password:
+<!- use form validation as seen on page 165 -->
+
+<!-- add a <button>  tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though,
+   instead keep it simple and write it out like this: <button> Submit</button>-->
+
+<!-- insert image of a generic college using the <img> tag as done in previous assignment  
+ - grab image from “unsplash” (be sure to create your "images" folder in the root directory 
+ of your assignment's folder) and resize the image using height=”600” width=”450”  basically 
+ use exact code found on page 100 -->
+
+<!--About the school We are the best at what we do! From the arts to the sciences,
+we've got you covered. Here you will find all the information you need: Course
+list How to sign up for classes Resource centers Faculty list Campus map Still
+need more information? No worries! Feel free to use our search bar below!-->
+
+<!-- insert search bar – as seen on page 168, you can use exact code -->
+
+<!--  insert button  tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though,
+   instead keep it simple and write it out like this: <button> Submit</button>-->
+
+<!--Join our Mailing list! If you join our mailing list, you will get exclusive
+information regarding upcoming events, assignments, and well... more events! Be
+the first to be “in the know”. We promise not to spam you. Really.-->
+<!-- emphasize “really” -->
+
+<!-- insert mailing list – use exact code on page 167, found within the top two boxes – instead of using <input type=”submit”> for a button, please use the actual <button> tag for the next part below -->
+
+<!-- insert <button> tag as seen on page 162 – but don’t use an <img> tag as seen on the same page though, instead keep it simple and write it out like this: <button> Submit</button>  -->
+
+<!--What kind of music applications do you like using while studying or on the go?
+You can choose more than one music streaming application:-->
+
+<!--  insert a “checkbox”  which looks like this:   <input type=”checkbox”>  You can use the exact example/code  on page 156 in your book  -->
+
+<!--Favorite style of music?
+
+<!-  use the radio buttons, exactly as it is written on page 155->
+
+Are you a MacOS, Windows, or Linux user? As you browse the internet, which kind
+of computer OS are you using?
+
+<!-  insert a Drop Down List Box - you can use the exact code on page 157, just change the working from ipad, radio, computer to “Windows, MacOS, Linux” ->
+
+Add an image for your profile!
+
+<!-  insert image of self or  if you don't want to use a picture of yourself, use a generic image of a college student from “unsplash” and resize the image using height=”600” width=”600”  use similar code found on page 100-->
+
+<!--  add file input box – same code on page 159 works->
+
+Contact? Please use the form below:
+
+<!- use the exact code from page 164 in your book – make sure to change the 3 titles to “First Name” “Last Name” and “Email” ->
+
+Set a date when you can visit the campus!
+
+<!-  use the exact code found on page 166 -->
