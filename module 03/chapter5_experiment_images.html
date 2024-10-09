@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chapter_5_Concepts</title>
+    <title>Chap_5_Images</title>
   </head>
   <body>
     <h2>Let's insert some images on this page</h2>
@@ -13,6 +13,7 @@
       <br />namely scr="image_location" and
       alt="description_of_image_for_readers"
     </p>
+    <p>
       if you want a clickable image, place the entire image tag within anchor
       tags that include an href
     </p>
@@ -35,22 +36,23 @@
         alt="image of the html3 logo"
         width="50"
         height="50"
-      />(2) here we have an image at the beginning and within a paragraph
+      />(2) here we have an inline image at the beginning and within a paragraph
     </p>
     <p>
-      (3) here we have an image
+      (3) here we have an inline image
       <img
         src="images_folder/300wx300h.png"
         alt="image of the html3 logo"
         width="50"
         height="50"
+        style="border: 2px solid purple"
       />
-      within a paragraph
+      within a paragraph and wrapped with a purple border
     </p>
     <hr />
     <br />
     <p>
-      (4) here we have an image
+      (4) here we have an inline image
       <img
         src="images_folder/300wx300h.png"
         alt="image of the html3 logo"
@@ -61,7 +63,7 @@
       within a paragraph and the "align" attribue set to TOP
     </p>
     <p>
-      (5) here we have an image
+      (5) here we have an inline image
       <img
         src="images_folder/300wx300h.png"
         alt="image of the html3 logo"
@@ -72,7 +74,7 @@
       within a paragraph and the "align" attribue set to MIDDLE
     </p>
     <p>
-      (6) here we have an image
+      (6) here we have an inline image
       <img
         src="images_folder/300wx300h.png"
         alt="image of the html3 logo"
@@ -80,12 +82,13 @@
         height="50"
         align="bottom"
       />
-      within a paragraph and the "align" attribue set to BOTTOM
+      within a paragraph and the "align" attribue set to BOTTOM, <br />
+      which seems to be the DEFAULT
     </p>
     <hr />
     <br />
     <p>
-      (7) here we have an image
+      (7) here we have an inline image
       <img
         src="images_folder/400wx300h.jpg"
         alt="image of a bear"
@@ -102,7 +105,7 @@
     <br />
     <br />
     <p>
-      (8) here we have an image
+      (8) here we have an inline image
       <img
         src="images_folder/400wx300h.jpg"
         alt="image of a bear"
@@ -121,14 +124,14 @@
       (9) here we have an image with a caption using the "figure" and
       "figcaption" tags
     </p>
-    <figure>
+    <figure style="border: 2px solid black;">
       <img
         src="images_folder/400wx300h.jpg"
         alt="image of a bear"
         width="240"
         height="160"
       />
-      <figcaption>Caption - A Bear Catches a Fish</figcaption>
+      <figcaption style="border: 2px solid pink;">Caption - A Bear Catches a Fish</figcaption>
     </figure>
     <hr />
     <br />
