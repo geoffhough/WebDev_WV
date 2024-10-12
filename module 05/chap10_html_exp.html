@@ -24,7 +24,8 @@
     </p>
     <h2>H2 header</h2>
     <p>
-      The style of all h2 headers are controlled by a style tags within the "head" section of this html doc.  
+      The style of all h2 headers are controlled by a style tags within the
+      "head" section of this html doc.
       <span class="lorem"
         >I am class=lorem....Lorem ipsum dolor sit amet consectetur adipisicing
         elit. Quod provident ullam accusamus veritatis, dignissimos asperiores
@@ -44,8 +45,8 @@
     </p>
     <h3 style="color: red">H3 header</h3>
     <p>
-      The color of this h3 header is controlled by a style attribute added to the
-      h3 tag itself.
+      The color of this h3 header is controlled by a style attribute added to
+      the h3 tag itself.
       <span id="A23"
         >I am id=A23....#A23...Lorem ipsum dolor sit amet consectetur
         adipisicing elit. Quod provident ullam accusamus veritatis, dignissimos
@@ -56,6 +57,59 @@
       >
     </p>
     <br />
-    <img src="what is CSS Rule.png" alt="anatomy of css rule" width="400" />
+    <img src="what is CSS Rule.png" alt="anatomy of css rule" width="300" />
+    <br />
+    <hr />
+    <br />
+    <p>Let's illustrate the DECENDENT SELECTOR</p>
+    <ul>
+      <li>list item 1 with link <a href="">LINK</a></li>
+      <li>list item 2 with link <a href="">LINK</a></li>
+      <li>list item 3 witout a link (that is, no a tags)</li>
+    </ul>
+    <p>we have requested that a tags within li times be green and big</p>
+    <br />
+    <hr />
+    <br />
+    <p>Let's illustrate targeting specific elemeents of a CLASS,</p>
+    <h4 class="lorem">this is an h4 header with class = lorem</h4>
+    <h5 class="lorem">this is a h5 tage with class = lorem</h5>
+    <p>
+      we have requested that only h5 elements with class=lorem, <br />
+      be blue and big
+    </p>
+    <br />
+    <hr />
+    <br />
+    <p>
+      Let's illustrate the concept of INHERITANCE. <br />
+      Some properties that you assign to parent element <br />
+      are inherited by the children, and some are not.
+    </p>
+    <div>
+      <p>p tag within the div</p>
+      <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ol>
+      <p>another p tag within the div</p>
+    </div>
+    <p>
+      the list and p tags above are surrouneded by div tags, which have be
+      styled <br />
+      to red in color and to have a cyan border. note the color is inherited.
+      <br />but the border is not automatically inherited. But we deliberately
+      requested that p tages inherit any border-related properties.
+    </p>
+    <br />
+    <hr />
+    <br />
+    <p>
+      finally, we have the idea of PRECEDENCE with CSS rules. that is, which
+      rule wins when there is conflict. <br />
+      the concepts of LAST RULE, SPECIFICITY, AND !IMPORTANCE apply
+    </p>
+    <img src="css precedence.png" alt="what is precedence in CSS" width="500" />
   </body>
 </html>

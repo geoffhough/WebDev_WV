@@ -1,5 +1,26 @@
 h1 {
   color: blue;
 }
-.lorem {color:maroon}
-#A23 {color: orange;}
+.lorem {
+  color: maroon;
+}
+#A23 {
+  color: orange;
+}
+
+li a {
+  color: green;
+  font-size: 20px;
+}
+
+h5.lorem {
+  color: blue;
+  font-size: 25px;
+}
+
+div {
+  border: 2px solid cyan;
+  color: red;
+}
+
+p {border: inherit;}
