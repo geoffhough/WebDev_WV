@@ -29,6 +29,7 @@ p {
 
 h1 {
   font-size: 2.5em;
+  text-align: center;
 }
 
 .bioText {
@@ -36,6 +37,21 @@ h1 {
   color: rgb(9, 44, 67);
   text-shadow: 2px 2px 4px #000;
   font-size: 2em;
+}
+
+a:link {
+  color: deeppink;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: deeppink;
+  text-decoration: underline;
+}
+a:active {
+  color: darkcyan;
 }
 
 /* for bioText, you will choose the color combinations and 
@@ -118,5 +134,73 @@ h1 {
     font-style: italic;
   }
   
+
+
+
+===============
+
+
+The take away from chapter 11 is that ther are FOUR different ways to apply color but the recommended ones to use are rgb (or rgba) and hex("#").
+
+Be sure to get very comfortable with using rgb(255, 255, 255) or rgba(255, 255, 255, 1) and HEX (which is represented either like this: #aaa OR #1a1a1a) as well as the properties of :
+
+background-color (to change background color)
+
+color (to change font color)
+
+
+-----------------
+
+
+The takeaways from chapter 12 are these main properties:
+
+-How to import (only found in the lecture video)
+
+font-family
+
+font-size
+
+using %, px, em, and rem (there is explanations in both the book and the lecture -- but mainly use px, em and rem
+
+font-weight
+
+text-decoration (will come in handy later too)
+
+text-align (a must!)
+
+text-shadow (I like it, but it's not for everyone - I do encourage you to use it!)
+
+ 
+
+These pseudo classes are awesome and really bring your links to life.  They must be used in a specific order. The mnemonic was: 
+
+"Let's Visit Harry Again" (from Harry Potter). Here it is in context on an <a> tag: 
+
+(link, visited, hover, active)
+
+a:link {
+color: deeppink;
+text-decoration: none;
+
+}
+a:visited {
+color: black;
+
+}
+a:hover {
+color: deeppink;
+text-decoration: underline;
+
+}
+a:active {
+color: darkcyan;
+
+}
+
+You can also include :focus, which would need to be in this order: 
+
+"Let's Visit Harry on Friday Again"
+
+
 
   */
