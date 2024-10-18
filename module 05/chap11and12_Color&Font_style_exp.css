@@ -1,0 +1,16 @@
+h1 {
+  color: rgb(34, 124, 165);
+}
+
+h2 {
+  color: #227ca5;
+}
+
+h3 {
+  color: rgba(34, 124, 165, 0.33);
+}
+
+.lorem {
+  color: rgb(42, 45, 45);
+  background-color: rgba(67, 137, 121, 0.142);
+}
