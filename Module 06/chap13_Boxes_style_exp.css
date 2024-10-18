@@ -1,0 +1,33 @@
+h1 {
+  color: rgb(34, 124, 165);
+}
+
+div {
+  height: 300px;
+  width: 300px;
+  background-color: rgb(140, 156, 77);
+  margin: auto;
+}
+
+h2 {
+  color: #227ca5;
+  text-align: center;
+}
+
+h3 {
+  color: rgba(34, 124, 165, 0.33);
+}
+
+.lorem {
+  color: rgb(42, 45, 45);
+  background-color: rgba(67, 137, 121, 0.142);
+}
+
+p {
+  width: 75%;
+  height: 75%;
+}
+
+.para3text {overflow: scroll;
+width: 200px;
+height: 200px;}
