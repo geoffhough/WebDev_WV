@@ -28,6 +28,24 @@ p {
   height: 75%;
 }
 
-.para3text {overflow: scroll;
-width: 200px;
-height: 200px;}
+.para3text {
+  overflow: scroll;
+  width: 200px;
+  height: 200px;
+}
+
+#hellobox1 {
+  border: 10px solid black;
+  background-color: yellow;
+  font-size: 25px;
+  margin: 10px;
+  padding: 90px;
+}
+
+#hellobox2 {
+  border: 10px solid black;
+  background-color: yellow;
+  font-size: 25px;
+  margin: 70px;
+  padding: 10px;
+}
