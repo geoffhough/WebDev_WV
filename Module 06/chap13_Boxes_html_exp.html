@@ -3,10 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chap13_Experiment</title>
+    <title>Chap13_Borders_Exp</title>
     <link rel="stylesheet" href="chap13_Boxes_style_exp.css" />
   </head>
   <body>
+    <br />
+    <ul>
+      <li>NavBarItem1-InlineDisplayed</li>
+      <li>NavBarItem2</li>
+      <li>NavBarItem3 / hidden item --:></li>
+      <li class="HiddenNavItem">NavBarItem4</li>
+      <li>NavBarItem5</li>
+      <li class="NoneDisplayItem">NavBarItem6</li>
+      <li><:-- item display = none / NavBarItem7</li>
+    </ul>
+
+    <br />
     <h1>H1 header</h1>
     <p>
       The color of this h1 header is controlled by RGB in the CSS File.
@@ -40,20 +52,51 @@
         nihil ut. Laboriosam, voluptatum odit?</span
       >
     </p>
-    <br>
+    <br />
     <p>consider two differt p-tags:</p>
-       <p id="hellobox1">
-      Hello....I have a little MARGIN and big PADDING... Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-      provident ullam accusamus veritatis, dignissimos asperiores minus
+    <p id="hellobox1">
+      Hello....I have a little MARGIN and big PADDING...Just playing around with
+      border-width... Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quod provident ullam accusamus veritatis, dignissimos asperiores minus
       quibusdam veniam, corporis aut cupiditate reiciendis ab atque qui nihil
       ut. Laboriosam, voluptatum odit?
     </p>
     <p id="hellobox2">
-      Hello....I have a big MARGIN and little PADDING.... Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+      Hello....I have a big MARGIN and little PADDING.... Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Quod provident ullam accusamus
+      veritatis, dignissimos asperiores minus quibusdam veniam, corporis aut
+      cupiditate reiciendis ab atque qui nihil ut. Laboriosam, voluptatum odit?
+    </p>
+    <p id="hellobox3">
+      Playing with BORDER STYLING (set to "outset" style).... Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Quod provident ullam accusamus
+      veritatis, dignissimos asperiores minus quibusdam veniam, corporis aut
+      cupiditate reiciendis ab atque qui nihil ut. Laboriosam, voluptatum odit?
+    </p>
+    <p id="hellobox4">
+      Hello....Playing with BOXSHADOW (Horiz Offset, Vert Offset, Blur Distance,
+      Spread of Shadow) Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quod provident ullam accusamus veritatis, dignissimos asperiores minus
+      quibusdam veniam, corporis aut cupiditate reiciendis ab atque qui nihil
+      ut. Laboriosam, voluptatum odit?
+    </p>
+    <p id="hellobox5">
+      Hello....Playing with BORDER RADIUS (top, right, bottom, left -- so
+      clockwise) Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
       provident ullam accusamus veritatis, dignissimos asperiores minus
       quibusdam veniam, corporis aut cupiditate reiciendis ab atque qui nihil
       ut. Laboriosam, voluptatum odit?
     </p>
+    <br />
+
+    <br />
+    <a
+      href="https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1"
+      target="_blank"
+      >Learn about <span id="Inline_Block">INLINE BLOCK</span> concept. Click
+      here.</a
+    >
+    <br />
     <br />
     <hr />
     <h1>Chapter 13 Takeaways PART ONE</h1>
@@ -176,36 +219,5 @@
     <h1>Chapter 13 Takeaways PART 2</h1>
 
     <br />
-    <p>
-      <br />
-      Lecture for Chapter 13 (section 2) - Media Querys, Repsonsiveness, and
-      Box-Sizing<br /><br />
-      This information is only available via this lecture (not found in
-      book!):<br /><br />
-      https://youtu.be/ZKlah9sOsyU <br /><br /><br /><br />Links to an external
-      site. <br /><br />List of sizing for "responsiveness" or "responsive web
-      sites" <br /><br />320px — 480px: Mobile devices<br /><br />
-      481px — 768px: iPads, Tablets<br /><br />
-      769px — 1024px: Small screens, laptops <br /><br />1025px — 1200px:
-      Desktops, large screens<br /><br />
-      1201px and more —  Extra large screens, TV<br /><br /><br /><br />
-
-      Keep in mind that we will only use Mobile and iPad sizing (watch video for
-      more detail) or use numbers below: <br /><br />REFERENCE for @media query
-      sizing: <br /><br />480px: Mobile devices<br /><br />
-      481px — 768px: iPads, Tablets <br /><br />(Regular sizing doesn't need a
-      @media query) <br /><br />To read more about @media queries:<br /><br />
-      https://www.freecodecamp.org/news/css-media-queries-breakpoints-media-types-standard-resolutions-and-more/#:~:text=Normally%2C%20the%20text%20size%20will%20be%2014px.%20However,queries%20at%20the%20end%20of%20your%20CSS%20file
-      <br /><br />Links to an external site.<br /><br /><br /><br />
-
-      Read more on box-sizing here:<br /><br />
-      https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing
-      <br /><br />Links to an external site.<br /><br />Syntax to memorize
-      below:<br /><br />
-      *, ::before, ::after { box-sizing: border-box; } <br /><br /><br /><br />
-      More info on <br /><br />display: inline; <br /><br />display: block;
-      <br /><br />display: inline-block;<br /><br />
-      https://www.w3schools.com/Css/tryit.asp?filename=trycss_inline-block_span1
-    </p>
   </body>
 </html>
