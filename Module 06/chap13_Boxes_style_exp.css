@@ -12,7 +12,8 @@ following setting. BEST PRACTICE!
   box-sizing: border-box;
 }
 
-* ::before,
+*,
+::before,
 ::after {
   box-sizing: border-box;
 }
