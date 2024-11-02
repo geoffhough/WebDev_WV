@@ -1,0 +1,178 @@
+/* tip -- you can comment-out text quickly by highlight text and hitting Command plus / (backslash)  */
+
+/* Importing our font:
+======================= */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* In order to ensure that boxes intended to be
+inside other boxes do not extend beyond,
+we need to use the following settings.  Also to
+make responsive text sizing easier.
+So, CSS set-up BEST PRACTICES below:
+============================== */
+* {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Sizing for COMPUTER below.  BLUE theme.
+============================== */
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-size: 4rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+header,
+footer {
+  float: left;
+  height: 300px;
+  width: 100%;
+  border: 2px solid black;
+  background: rgb(47, 74, 116);
+}
+
+.div1 {
+  float: left;
+  height: 500px;
+  width: 20%;
+  border: 2px solid black;
+  background: rgb(19, 34, 94);
+  color: antiquewhite;
+}
+
+.div2 {
+  float: left;
+  height: 500px;
+  width: 40%;
+  border: 2px solid black;
+  background: rgb(70, 108, 160);
+}
+
+.div3 {
+  float: left;
+  height: 500px;
+  width: 20%;
+  border: 2px solid black;
+  background: rgb(123, 136, 174);
+}
+
+.div4 {
+  float: left;
+  height: 500px;
+  width: 20%;
+  border: 2px solid black;
+  background: rgb(117, 117, 151);
+}
+
+/* Sizing for TABLET below. 581px — 868px.  GREEN theme.
+============================== */
+
+@media (min-width: 581px) and (max-width: 868px) {
+  * {
+    font-size: 3rem;
+    color: rgb(218, 227, 159);
+  }
+
+  .div1 {
+    width: 33.3333%;
+    background: rgb(25, 74, 6);
+  }
+
+  .div2 {
+    width: 33.3333%;
+    background: rgb(44, 147, 50);
+  }
+
+  .div3 {
+    width: 33.3333%;
+    background: rgb(73, 130, 76);
+  }
+
+  .div4 {
+    width: 100%;
+    background: rgb(110, 158, 104);
+  }
+
+  footer,
+  header {
+    background: #107a30;
+  }
+}
+
+/* Sizing for MOBILE below. 580px.  PINK theme.
+============================== */
+
+@media (max-width: 580px) {
+  * {
+    font-size: 2rem;
+    color: rgb(249, 246, 249);
+  }
+
+  .div1 {
+    float: left;
+    width: 100%;
+    background: rgb(187, 150, 183);
+  }
+
+  .div2 {
+    width: 50%;
+    float: left;
+    background: rgb(132, 88, 125);
+  }
+
+  .div3 {
+    float: left;
+    width: 50%;
+    background: rgb(197, 80, 207);
+  }
+
+  .div4 {
+    float: left;
+    width: 100%;
+    background: rgb(225, 25, 185);
+  }
+
+  footer,
+  header {
+    background: rgb(136, 7, 121);
+  }
+}
+
+/* MEDIA QUERY INSTRUCTIONS
+========================
+
+Please make yours looks similar to mine, however,
+ your media query points will change to:
+
+FOR THIS MINI PROJECT (NOT PROPER SIZING!! But 
+do this for now, since it is easier to see the changes
+ when you resize your window):
+
+**in case you are wondering, the px size was
+ moved up 100px for everything temporarily**
+
+@media query sizing:
+580px: Mobile devices
+581px — 868px: iPads, Tablets
+(Regular sizing doesn't need a @media query)
+
+ 
+
+PROPER SIZING BELOW FOR REFERENCE
+
+@media query sizing:
+480px: Mobile devices
+481px — 768px: iPads, Tablets
+(Regular sizing doesn't need a @media query) */
