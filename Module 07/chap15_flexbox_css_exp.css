@@ -67,3 +67,8 @@ div.flex-flow {
   flex-flow: wrap column;
 }
 
+img.medium_size_block {
+  width: 100px;
+  height: 100px;
+  display: block;
+}
