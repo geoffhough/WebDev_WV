@@ -67,8 +67,14 @@ div {
 }
 
 a:hover {
-  opacity: 75%;
+  box-shadow: rgba(251, 251, 251, 0.25) 0px 74px 75px,
+    rgba(245, 244, 244, 0.12) 0px -22px 40px,
+    rgba(248, 248, 248, 0.12) 0px 6px 9px,
+    rgba(250, 249, 249, 0.17) 0px 18px 23px,
+    rgba(246, 245, 245, 0.09) 0px -6px 10px;
 }
+
+
 
 /* Sizing for TABLET below. 581px — 868px.  
 ============================== */
