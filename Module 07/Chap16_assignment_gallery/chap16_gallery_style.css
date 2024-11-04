@@ -1,3 +1,30 @@
+/* Importing our font:
+======================= */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* In order to ensure that boxes intended to be
+inside other boxes do not extend beyond,
+we need to use the following settings.  Also to
+make responsive text sizing easier.
+So, CSS set-up BEST PRACTICES below:
+============================== */
+* {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Sizing for COMPUTER below.  BLUE theme.
+============================== */
+
 body {
   background: url(images/Clyde.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -6,12 +33,75 @@ body {
 h1 {
   color: white;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 5em;
+  margin-bottom: 5%;
 }
 
 p {
   color: white;
   text-align: center;
   margin: 0 20%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-size: 2em;
+  margin-bottom: 5%;
+}
+
+img {
+  width: 350px;
+  height: 300px;
+  box-shadow: rgba(251, 251, 251, 0.25) 0px 54px 55px,
+    rgba(245, 244, 244, 0.12) 0px -12px 30px,
+    rgba(248, 248, 248, 0.12) 0px 4px 6px,
+    rgba(250, 249, 249, 0.17) 0px 12px 13px,
+    rgba(246, 245, 245, 0.09) 0px -3px 5px;
+  margin: 20px;
+  border-radius: 5%;
+}
+
+div {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: center;
+}
+
+a:hover {
+  opacity: 75%;
+}
+
+/* Sizing for TABLET below. 581px — 868px.  
+============================== */
+
+@media (min-width: 581px) and (max-width: 868px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  img {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+/* Sizing for MOBILE below. 580px.  
+============================== */
+
+@media (max-width: 580px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.25em;
+  }
+
+  img {
+    width: 200px;
+    height: 150px;
+  }
 }
