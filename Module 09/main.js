@@ -1,25 +1,6 @@
 // CHAPTER 19 AND CHAPTER 2 ASSIGNMENT - INTRO TO JAVASCRIPT
 // ===================================
 
-// Please download the assignment file here:
-
-// https://drive.google.com/file/d/14L3pL6JeCuDI-FzAIe7TzRpMSzsNLzD-/view?usp=drivesdk
-
-// Here is a link to a video on how to do the assignment:
-
-// https://youtu.be/FDyz8NvnBxM
-
-// Please upload your *saved* file or Copy and paste your code into an email message. Either works fine.
-
-// Details:
-
-// Read the instructions that are found within the file that you have downloaded (labeled as "main.js").
-//  Be sure to declare and name your variables properly. The lecture video, which the link will also
-//  be provided below, has the "answers" on how to do each question.
-
-// https://youtu.be/k7VnQs6YwQI
-
-// ==================================
 
 // declare a variable using the keyword "let" and the identifier aka the name of "cats"
 // and assign the value of 22
@@ -54,3 +35,26 @@ myArray[1] = 250;
 let MyOwnVariable = "We use JavaScript, not Python.";
 
 main.js;
+
+
+// ===================================
+
+// Please download the assignment file here:
+
+// https://drive.google.com/file/d/14L3pL6JeCuDI-FzAIe7TzRpMSzsNLzD-/view?usp=drivesdk
+
+// Here is a link to a video on how to do the assignment:
+
+// https://youtu.be/FDyz8NvnBxM
+
+// Please upload your *saved* file or Copy and paste your code into an email message. Either works fine.
+
+// Details:
+
+// Read the instructions that are found within the file that you have downloaded (labeled as "main.js").
+//  Be sure to declare and name your variables properly. The lecture video, which the link will also
+//  be provided below, has the "answers" on how to do each question.
+
+// https://youtu.be/k7VnQs6YwQI
+
+// ==================================
