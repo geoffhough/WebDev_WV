@@ -39,6 +39,15 @@ h1 {
   font-size: 2em;
 }
 
+
+/* These pseudo classes are awesome and really bring your
+ links to life. They must be used in a specific order. 
+ The mnemonic was:
+
+"Let's Visit Harry Again" (from Harry Potter).
+ Here it is in context on an a tag: */
+
+
 a:link {
   color: deeppink;
   text-decoration: none;

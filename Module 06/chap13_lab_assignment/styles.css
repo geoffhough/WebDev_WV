@@ -44,9 +44,9 @@ li {
   margin: 10px;
 }
 
-a {
+ a {
   text-decoration: none;
-}
+} 
 
 /* ******** below is to style LINKs ****************** */
 
@@ -63,7 +63,7 @@ a:hover {
 }
 a:active {
   color: darkcyan;
-}
+} 
 
 /* *************   setting up Media Queries below ************** */
 
