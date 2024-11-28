@@ -1,0 +1,98 @@
+/* tip -- you can comment-out text quickly by highlight text and hitting Command plus / (backslash)  */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* =================
+In order to ensure that boxes intended to be inside other 
+boxes do not extend beyond, we need to use the 
+following setting. BEST PRACTICE!
+============================== */
+
+* {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* ============================== */
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* ============================== */
+
+div {
+  border: 2px solid blue;
+  background-color: rgba(217, 223, 227, 0.516);
+  overflow: auto;
+}
+
+p.relative {
+  position: relative;
+  top: 25px;
+  left: 50px;
+}
+
+p.absolute {
+  position: absolute;
+  top: 450px;
+  left: 700px;
+  width: 300px;
+  color: red;
+}
+
+p.fixed {
+  position: fixed;
+  top: 600px;
+  left: 70px;
+  width: 1200px;
+  color: green;
+  border: 2px dotted green;
+  background-color: lightgreen;
+  z-index: -1;
+}
+
+/* NOTE -- use of z-index above.  sending this p-tag behind other stuff */
+
+
+p.float {
+  float: left;
+  width: 30%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 10px 10px 10px 10px;
+  padding: 5px;
+  clear: right;
+}
+
+/* NOTE -- "clear" property above set to "right", which works better than
+ recommended "both" setting in this case */
+
+
+/* two tips for making side-by-side floats work better
+====================================
+
+How to handle float problems: 
+p {
+width: 230px;
+float: left;
+margin: 5px;
+padding: 5px;
+background-color: #efefef;}
+.clear {
+clear: both; (this makes sure boxes are running into each other when
+ being floated within an element like a div as seen on page 371-372)
+}
+
+div {
+border: 1px solid #665544;
+overflow: auto;
+width: 100%; (use both overflow: auto; and width: 100%; to make sure
+ floats are properly "inside" of their containing parents. 
+}
+========================== */

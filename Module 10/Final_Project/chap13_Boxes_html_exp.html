@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chap13_Borders_Exp</title>
+    <link rel="stylesheet" href="chap13_Boxes_style_exp.css" />
+  </head>
+  <body>
+    <br />
+    <ul>
+      <li>NavBarItem1-InlineDisplayed</li>
+      <li>NavBarItem2</li>
+      <li>NavBarItem3 / hidden item --:></li>
+      <li class="HiddenNavItem">NavBarItem4</li>
+      <li>NavBarItem5</li>
+      <li class="NoneDisplayItem">NavBarItem6</li>
+      <li><:-- item display = none / NavBarItem7</li>
+    </ul>
+
+    <br />
+    <h1>H1 header</h1>
+    <p>
+      The color of this h1 header is controlled by RGB in the CSS File.
+      <span class="lorem"
+        >I am class=lorem.... Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Quod provident ullam accusamus veritatis, dignissimos asperiores
+        minus quibusdam veniam, corporis aut cupiditate reiciendis ab atque qui
+        nihil ut. Laboriosam, voluptatum odit?</span
+      >
+    </p>
+    <div>
+      <h2>H2 header</h2>
+      <p>
+        The style of this h2 header is controlled by HEX in the CSS File.
+        <span class="lorem"
+          >I am class=lorem.... Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Quod provident ullam accusamus veritatis,
+          dignissimos asperiores minus quibusdam veniam, corporis aut cupiditate
+          reiciendis ab atque qui nihil ut. Laboriosam, voluptatum odit?</span
+        >
+      </p>
+    </div>
+    <h3>H3 header</h3>
+    <p class="para3text">
+      The style of this h3 header is controlled by RGBA in the CSS File, @ 33%
+      opacity.
+      <span class="lorem"
+        >I am class=lorem.... Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Quod provident ullam accusamus veritatis, dignissimos asperiores
+        minus quibusdam veniam, corporis aut cupiditate reiciendis ab atque qui
+        nihil ut. Laboriosam, voluptatum odit?</span
+      >
+    </p>
+    <br />
+    <p>consider two differt p-tags:</p>
+    <p id="hellobox1">
+      Hello....I have a little MARGIN and big PADDING...Just playing around with
+      border-width... Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quod provident ullam accusamus veritatis, dignissimos asperiores minus
+      quibusdam veniam, corporis aut cupiditate reiciendis ab atque qui nihil
+      ut. Laboriosam, voluptatum odit?
+    </p>
+    <p id="hellobox2">
+      Hello....I have a big MARGIN and little PADDING.... Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Quod provident ullam accusamus
+      veritatis, dignissimos asperiores minus quibusdam veniam, corporis aut
+      cupiditate reiciendis ab atque qui nihil ut. Laboriosam, voluptatum odit?
+    </p>
+    <p id="hellobox3">
+      Playing with BORDER STYLING (set to "outset" style).... Lorem ipsum dolor
+      sit amet consectetur adipisicing elit. Quod provident ullam accusamus
+      veritatis, dignissimos asperiores minus quibusdam veniam, corporis aut
+      cupiditate reiciendis ab atque qui nihil ut. Laboriosam, voluptatum odit?
+    </p>
+    <p id="hellobox4">
+      Hello....Playing with BOXSHADOW (Horiz Offset, Vert Offset, Blur Distance,
+      Spread of Shadow) Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Quod provident ullam accusamus veritatis, dignissimos asperiores minus
+      quibusdam veniam, corporis aut cupiditate reiciendis ab atque qui nihil
+      ut. Laboriosam, voluptatum odit?
+    </p>
+    <p id="hellobox5">
+      Hello....Playing with BORDER RADIUS (top, right, bottom, left -- so
+      clockwise) Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+      provident ullam accusamus veritatis, dignissimos asperiores minus
+      quibusdam veniam, corporis aut cupiditate reiciendis ab atque qui nihil
+      ut. Laboriosam, voluptatum odit?
+    </p>
+    <br />
+
+    <br />
+    <a
+      href="https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1"
+      target="_blank"
+      >Learn about <span id="Inline_Block">INLINE BLOCK</span> concept. Click
+      here.</a
+    >
+    <br />
+    <br />
+    <hr />
+    <h1>Chapter 13 Takeaways PART ONE</h1>
+    <p>
+      There are a few key points from Chapter 13 - Boxes. Here are some of them:
+
+      <br /><br />
+
+      Width: use px or % Height: use px or % <br /><br />example:<br /><br />
+      div { height: 300px; width: 300px; background-color: #bb'bbaa; }
+
+      <br /><br />
+
+      When using percentages (%) vs. px, your boxes will be more responsive, as
+      they change with the re-sizing of your window when it;s enlarged or <br />
+      shrunken down. The issue with this, is that it's a bit difficult to
+      predict what boxes will look like with resizing. For resizing your boxes
+      <br />
+      to be "predictable" and following good responsive practices, use "@media"
+      and px and rewrite the size of your boxes according to your "conditions"
+      <br />
+      (i.e @media (min-width: 481px) and (max-width: 768px) )
+
+      <br /><br />
+
+      Overflow is great for boxes that have a lot of text but you don't want the
+      text to take up your entire page:<br /><br />
+      p { overflow: scroll; }
+
+      <br /><br />
+
+      Border, Margin, and Padding -- The two that you will mainly work with are
+      Margin and Padding:<br /><br />
+      (see page 308 for a good example)<br /><br />
+      Margin: Pushing boxes around "externally" on your main page -- essentially
+      it allows you to move your box around the entire web page
+      <br /><br />Padding: Moving content INSIDE your boxes (examples is are
+      they flush again the inner wall of the box -- or do they have a little bit
+      of space between the inner edge of the box and themselves?)
+      <br /><br />Border: We use this at the moment to see how big our boxes are
+      -- use this to so that you can "see" where you're boxes are being placed.
+      When you change the size of your border, be sure to use the "box-sizing"
+      trick at the top of your CSS file which is:
+
+      <br /><br />
+
+      * { box-sizing: border-box; }
+
+      <br /><br />
+
+      - do remember that the top code DOES NOT cover psuedo elements as seen on
+      page 289 - which can be very useful! If you want to make sure they are
+      protected from weird sizing issues, use this syntax below instead:
+      <br /><br />
+
+      *, ::before, ::after { box-sizing: border-box; }
+      <br /><br />
+
+      (Single colon ":" is more compatible with older browsers, and what you see
+      above is actually a double colon "::" then the word -- use commas between
+      each element to make sure they are separated)
+
+      <br /><br />
+
+      Here is some more info on the box-sizing trick:
+      <br /><br />
+
+      https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing (Links to an
+      external site.)
+
+      <br /><br />
+
+      For Border Width, Style, and Color -- we use the shorthand way of writing
+      it: border: width style color; which looks like this below in context:
+      border: 2px solid black;
+
+      <br /><br />
+
+      If you want to specify a specific side of the border, use the shorthand
+      like this (for example, top and bottom of the border):
+      <br /><br />border-top: 2px solid black; border-bottpm: 2px solid black;
+      <br /><br />
+
+      With the code above, we will not have sides on our on border, only the top
+      and bottom of the border will appear.<br /><br />
+      display: inline; This is will turn block-elements into inline-elements<br /><br />
+      display: block; This will turn inline-elements into block-elements
+      <br /><br />display: inline-block; Turns elements into inline-elements AND
+      allows the use of block-elements properties+values. <br /><br />
+
+      For getting a clearer picture of display: inline-block; please visit this
+      page:<br /><br />
+      https://www.w3schools.com/Css/tryit.asp?filename=trycss_inline-block_span1
+      (Links to an external site.)
+
+      <br /><br />
+
+      display: none; The element that would be there is hidden AND it's
+      placement is no longer recognized as seen on page 317
+      <br /><br />visibility: hidden; The element will disappear, but its
+      placement on your page will remain (there will be an empty space where the
+      element should be).
+
+      <br /><br />
+
+      Box-shadows are great and these two are great examples of its use:<br /><br />
+      box-shadow: 5px 5px 5px 5px #77777,7; box-shadow: 0 0 10px #77777,7;
+
+      <br /><br />
+
+      Border-radius will be a big one to use for styling purposes. I advise
+      getting very familiar with this syntax. Here is a good example of code:<br /><br />
+      border-radius: 10px; (all around -- which starts and goes from the top,
+      right, bottom, left -- make note that it moves "clockwise")
+      <br /><br />border-radius: 10px 60px; <br /><br />(top left, bottom right
+      will be 10px)<br /><br />
+      (top right and bottom left will be 60px)
+    </p>
+    <hr />
+    <h1>Chapter 13 Takeaways PART 2</h1>
+
+    <br />
+  </body>
+</html>

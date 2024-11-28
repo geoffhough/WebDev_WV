@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+/* put borders around all the elements and float them */
+
+hgroup,
+aside,
+article,
+figure,
+nav,
+section {
+  border: 2px solid black;
+  margin: 5px;
+  padding: 2px;
+}
+
+header {
+  float: left;
+  width: 100%;
+  border: 2px solid green;
+  margin: 2px;
+  padding: 2px;
+}
+
+div {
+  border: 2px solid rgb(224, 17, 17);
+  margin: 2px;
+  padding: 2px;
+  float: left;
+  width: 70%;
+}
+
+.misc {
+  width: 95%;
+}
+
+aside {
+  float: left;
+  width: 25%;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  border: 2px solid blue;
+  margin: 2px;
+  padding: 2px;
+}
+
+body {
+  float: left;
+  width: 95%;
+  border: 3px solid salmon;
+  padding: 5px;
+}
+
+/* adjust the nav area */
+
+nav {
+  text-align: center;
+}
+
+li {
+  display: inline;
+}
+
+img {
+  width: 200px;
+}

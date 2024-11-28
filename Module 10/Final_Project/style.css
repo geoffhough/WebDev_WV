@@ -34,12 +34,51 @@ html {
   text-align: center;
 }
 
+/* Navigation Bar Styling
+============================== */
+
+nav {
+  border: 2px solid red;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  float: left;
+}
+
+li {
+  display: inline;
+  margin: 10px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: deeppink;
+  text-decoration: none;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  color: deeppink;
+  text-decoration: underline;
+}
+a:active {
+  color: darkcyan;
+}
+
+/* ******** ****************** */
+
 header,
 footer {
   float: left;
   height: 300px;
   width: 100%;
-  border: 2px solid black;
+  border: 3px solid black;
   background: rgb(47, 74, 116);
 }
 

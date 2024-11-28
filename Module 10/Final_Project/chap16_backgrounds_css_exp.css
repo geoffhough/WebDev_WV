@@ -1,0 +1,97 @@
+/* tip -- you can comment-out text quickly by highlight text and hitting Command plus / (backslash)  */
+
+/* Importing our font:
+======================= */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* In order to ensure that boxes intended to be
+inside other boxes do not extend beyond,
+we need to use the following settings.  Also to
+make responsive text sizing easier.
+So, CSS set-up BEST PRACTICES below:
+============================== */
+* {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Sizing for COMPUTER below.
+============================== */
+
+h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  font-size: 2rem;
+  font-weight: 300;
+  margin: 5px;
+  padding: 5px;
+}
+
+/* ============================= */
+
+img.extra_large {
+  width: 40%;
+  border: solid black 2px;
+}
+
+img.large {
+  width: 10%;
+  border: solid black 2px;
+}
+
+img.small {
+  width: 7%;
+  border: solid black 2px;
+}
+
+img.float_left_image {
+  width: 7%;
+  border: solid black 2px;
+  float: left;
+  margin: 1%;
+}
+
+img.float_right_image {
+  width: 7%;
+  border: solid black 2px;
+  float: right;
+  margin: 1%;
+}
+
+img.center_image {
+  width: 7%;
+  border: solid black 2px;
+  display: block;
+  margin: 0px auto;
+}
+
+div.div1 {
+  display: flex;
+  justify-content: center;
+  border: 2px solid black;
+  background: rgb(209, 209, 227);
+  background: linear-gradient(
+    90deg,
+    rgba(209, 209, 227, 0.646) 6%,
+    rgba(118, 186, 200, 1) 85%
+  );
+}
+
+body {
+  background: url(images/image_300wx300h.png) no-repeat right bottom fixed floralwhite;
+  background-size: 40%;
+}
