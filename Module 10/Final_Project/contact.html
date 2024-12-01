@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="top_of_page">
       <nav>
-        <li>
-          <img id="nav_logo" src="images/simfin_logo.png" alt="company_logo" />
+        <li class="nav_bar">
+          <a href="index.html"><img id="nav_logo" src="images/simfin_logo.png" alt="company_logo" /></a>
         </li>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="our_approach.html">Our Approach</a></li>
-        <li><a href="financial_model.html">Financial Model</a></li>
-        <li><a href="about_us.html">About Us</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="nav_bar"><a href="index.html">Home</a></li>
+        <li class="nav_bar"><a href="our_approach.html">Our Approach</a></li>
+        <li class="nav_bar">
+          <a href="financial_model.html">Financial Model</a>
+        </li>
+        <li class="nav_bar"><a href="about_us.html">About Us</a></li>
+        <li class="nav_bar"><a href="contact.html">Contact</a></li>
       </nav>
       <br />
       <div class="header_div">
@@ -35,85 +37,91 @@
     <div class="content">
       <!-- ====================== -->
 
+
       <!-- CONTACT SECTION 1-->
-      <section class="contact_section1" style="border: 2px solid yellow">
-        <h2>Join our Mailing List!</h2>
+      <section class="contact_section1">
+        <h2>Join our Mailing List</h2>
         <p>
-          If you join our mailing list, you will get exclusive information
-          regarding upcoming events, assignments, and well... more events! Be
-          the first to be “in the know”.
+          If you'd like to subscribe to our monthly newsletter, please share
+          your email address below. We cover timely topics, answer client
+          questions, and link to relevant resources.
         </p>
         <br />
-        <fieldset>
-          <legend>Please use the form below :</legend>
-          <form action="https://turtle.com/" method="post">
-            <label for="user_email"> Please enter your email address:</label>
-            <input
-              type="email"
-              name="email_address"
-              size="25"
-              maxlength="40"
-              placeholder="email address"
-            /><button>Submit</button>
-          </form>
-        </fieldset>
+
+        <form action="https://simfin.com/" method="post">
+          <label for="user_email"> Please enter your email address:</label>
+          <br /><br />
+          <input
+            class="email_subscribe"
+            type="email"
+            name="email_address"
+            maxlength="40"
+            placeholder="email address"
+          />
+          <br /><br /><button>Submit</button>
+        </form>
       </section>
+
 
       <!-- CONTACT SECTION 2-->
 
-      <section class="contact_section2" style="border: 2px solid red">
+      <section class="contact_section2">
+        <h2>Reach Out</h2>
         <address>
           <li>Simplified Finance</li>
           <li>123 Main Street</li>
           <li>San Jose, CA 95119</li>
-          <li>
-            <a href="mailto:john.jones@gmail.com">john.jones@gmail.com></a>
-          </li>
         </address>
         <br />
-        <!-- add an iframe tag here - you can use exact code from page 189-->
+        <a href="mailto:info@simfin.com">info@simfin.com></a>
+        <br />
+        <br />
         <iframe
-          width="450"
-          height="350"
           src="https://maps.google.com/maps?q=123+market+street+san+jose+ca&amp;output=embed"
         >
         </iframe>
       </section>
 
+
       <!-- CONTACT SECTION 3-->
 
-      <section class="contact_section3" style="border: 2px solid orange">
-        <p>Which is your favorite style of music?</p>
-        <form action="https://turtle.com/" method="get">
-          <input type="radio" name="genre" value="Rock" checked="checked" />Rock
-          <input type="radio" name="genre" value="Jazz" />Jazz
-          <input type="radio" name="genre" value="Classical" />Classical
+      <section class="contact_section3">
+        <h2>Share Your Thoughts</h2>
+
+        <fieldset>
+          <legend>Please use the form below :</legend>
+          <p>
+            <em
+              >Always curious and looking to improve our service, we value your
+              input . Please share any observations, questions, or ideas.</em
+            >
+          </p>
+          <form action="https://simfin.com/" method="get">
+            <textarea
+              name="comments"
+              rows="6"
+              placeholder="Enter comments here"
+            ></textarea>
+          </form>
+        </fieldset>
+        <p>How would you rate your current level of financial literacy?</p>
+        <form action="https://simfin.com/" method="get">
+          <input type="radio" name="fin_lit_level" value="High" />High
+          <input
+            type="radio"
+            name="fin_lit_level"
+            value="Medium"
+            checked="checked"
+          />Medium <input type="radio" name="fin_lit_level" value="Low" />Low
         </form>
-        <br>
-        <h3>3) a simple TEXT AREA input form...</h3>
-    <p>
-      <em
-        >another input type is 'textarea'. this allows for multiple lines of
-        text. <br />
-        oddly, this takes an opening and a closing tag, both of which are
-        between the 'form' tags</em
-      >
-    </p>
-    <form action="https://geoffhough.com/" method="get">
-      <p>Enter some lines of text :</p>
-      <textarea
-        name="comments"
-        id="A11"
-        cols="20"
-        rows="5"
-        placeholder="using disapearing placeholder method"
-      ></textarea>
-    </form>
+        <br />
       </section>
 
       <!-- CONTENT ENDS HERE -->
     </div>
 
-    <footer>BOTTOM BOX</footer>
+    <footer>
+           <p><a href="#top_of_page">Back to the Top of Page</a></p>
+    </footer>
   </body>
 </html>

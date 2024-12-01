@@ -26,16 +26,27 @@ html {
  to follow (will try to adjust only for font size and arrangement of boxes).
 ================================================================ */
 
-html {
-  background: rgb(255, 252, 252);
+html,
+nav {
+  background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
-    rgba(255, 252, 252, 1) 1%,
-    rgba(240, 252, 255, 1) 99%
+    rgba(255, 255, 255) 12%,
+    rgb(70, 148, 168) 99%
   );
 }
 
+footer {
+  float: left;
+  height: 10%;
+  width: 100%;
+  font-weight: 400;
+  font-size: 2em;
+  text-align: center;
+}
+
 /* Navigation Bar and Header Styling */
+/* ======================================= */
 
 a:link {
   color: rgb(0, 0, 0);
@@ -53,14 +64,17 @@ a:active {
 }
 
 nav {
-  border: 1px solid rgb(0, 0, 0);
+  border-bottom: 1px solid rgba(150, 138, 138, 0.707);
   text-align: left;
   position: fixed;
   width: 100%;
   font-size: 2.5rem;
+  z-index: 1;
+  margin-top: -1%;
+  padding-top: 1%;
 }
 
-li {
+li.nav_bar {
   display: inline;
   margin: 1%;
   font-weight: bold;
@@ -74,11 +88,10 @@ li {
 }
 
 div.header_div {
-  border: 1px solid rgb(0, 0, 0);
   text-align: center;
   width: 100%;
   padding: 2%;
-  margin-top: 6%;;
+  margin-top: 6%;
 }
 
 h1 {
@@ -89,21 +102,90 @@ h2 {
   font-size: 2.5rem;
 }
 
-/* ******** ****************** */
+/* Content Styling - CONTACT PAGE  */
+/* ======================================= */
 
-/* header {
+div.content {
   display: flex;
-  align-items:;
-  height: 300px;
-  width: 100%;
-  border: 1px solid black;} */
-
-footer {
-  float: left;
-  height: 300px;
-  width: 100%;
-  border: 1px solid black;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+  border-bottom: 1px solid rgba(150, 138, 138, 0.483);
+  border-top: 1px solid rgba(150, 138, 138, 0.483);
+  font-size: 2rem;
 }
+
+section {
+  width: 600px;
+  margin: 1%;
+  padding: 2%;
+  border: 2px solid rgba(174, 176, 195, 0.043);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+iframe {
+  width: 80%;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+li {
+  display: grid;
+}
+
+input,
+button,
+textarea {
+  font-size: inherit;
+  box-shadow: 2px 2px 5px 2px gray;
+  font-family: "Roboto", sans-serif;
+}
+
+textarea,
+input.email_subscribe {
+  width: 90%;
+}
+
+/* Content Styling - ABOUT ME PAGE  */
+/* ======================================= */
+
+section.aboutme_section1 {
+  width: 25%;
+  margin: 1%;
+  padding: 6%;
+  border: 2px solid rgba(174, 176, 195, 0.043);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+img.about_us_simfin_logo {
+  width: 95%;
+  box-shadow: 2px 2px 2px 2px rgb(78, 77, 77);
+  border-radius: 5px;
+  float: center;
+  margin: 2%;
+ 
+}
+
+section.aboutme_section2 {
+  width: 70%;
+  margin: 1%;
+  padding: 3%;
+  border: 2px solid rgba(174, 176, 195, 0.043);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+img.winston_photo {
+  width: 18%;
+  box-shadow: 2px 2px 2px 2px rgb(78, 77, 77);
+  border-radius: 5px;
+  float: right;
+  margin: 1% 7%;
+}
+
+
+
+/* ******** ****************** */
 
 .div1 {
   float: left;
