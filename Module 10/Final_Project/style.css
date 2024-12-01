@@ -1,18 +1,13 @@
 /* tip -- you can comment-out text quickly by highlight text and hitting Command plus / (backslash)  */
 
-/* Importing our font:
+/* SETUP AND FONTS :
 ======================= */
+
+/* Import Font */
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-/* In order to ensure that boxes intended to be
-inside other boxes do not extend beyond,
-we need to use the following settings.  Also to
-make responsive text sizing easier.
-So, CSS set-up BEST PRACTICES below:
-============================== */
-* {
-  box-sizing: border-box;
-}
+/* Insure that boxes intended to be inside other boxes do not extend beyond those boxes */
 
 *,
 ::before,
@@ -20,66 +15,94 @@ So, CSS set-up BEST PRACTICES below:
   box-sizing: border-box;
 }
 
+/* Setup default font and default fontsize do that use of "rem" font sizing is more intuitive */
+
 html {
   font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
 }
 
-/* Sizing for COMPUTER below.  BLUE theme.
-============================== */
+/* Overall Sizing and Styling (for COMPUTER layout).   Tablet and Mobile Sizing
+ to follow (will try to adjust only for font size and arrangement of boxes).
+================================================================ */
 
 * {
-  font-family: "Roboto", sans-serif;
-  font-size: 4rem;
-  font-weight: 400;
-  text-align: center;
+  background: rgb(255, 252, 252);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 252, 252, 1) 1%,
+    rgba(240, 252, 255, 1) 99%
+  );
 }
 
-/* Navigation Bar Styling
-============================== */
-
-nav {
-  border: 2px solid red;
-  padding: 10px;
-  text-align: center;
-  position: fixed;
-  width: 100%;
-  float: left;
-}
-
-li {
-  display: inline;
-  margin: 10px;
-  font-weight: bold;
-}
-
-a {
-  text-decoration: none;
-}
+/* Navigation Bar and Header Styling */
 
 a:link {
-  color: deeppink;
+  color: rgb(0, 0, 0);
   text-decoration: none;
 }
 a:visited {
   color: gray;
 }
 a:hover {
-  color: deeppink;
+  color: darkcyan;
   text-decoration: underline;
 }
 a:active {
-  color: darkcyan;
+  color: rgb(0, 72, 139);
+}
+
+nav {
+  border: 1px solid rgb(0, 0, 0);
+  text-align: left;
+  position: fixed;
+  width: 100%;
+  font-size: 2.5rem;
+}
+
+li {
+  display: inline;
+  margin: 1%;
+  font-weight: bold;
+}
+
+#nav_logo {
+  width: 7%;
+  vertical-align: middle;
+  margin-right: 5%;
+  margin-left: -1%;
+}
+
+div.header_div {
+  border: 1px solid rgb(0, 0, 0);
+  text-align: center;
+  width: 100%;
+  padding: 2%;
+  margin-top: 6%;;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 /* ******** ****************** */
 
-header,
+/* header {
+  display: flex;
+  align-items:;
+  height: 300px;
+  width: 100%;
+  border: 1px solid black;} */
+
 footer {
   float: left;
   height: 300px;
   width: 100%;
-  border: 3px solid black;
-  background: rgb(47, 74, 116);
+  border: 1px solid black;
 }
 
 .div1 {
