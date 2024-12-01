@@ -9,7 +9,9 @@
   <body>
     <header>
       <nav>
-        <li><img id="nav_logo" src="images/simfin_logo.png" alt="company_logo"></li>
+        <li>
+          <img id="nav_logo" src="images/simfin_logo.png" alt="company_logo" />
+        </li>
         <li><a href="index.html">Home</a></li>
         <li><a href="our_approach.html">Our Approach</a></li>
         <li><a href="financial_model.html">Financial Model</a></li>
@@ -18,14 +20,100 @@
       </nav>
       <br />
       <div class="header_div">
-        <h1>Logic is the technique by which we add conviction to truth.</h1>
-        <h2>-- Jean de la Bruyere</h2>
+        <blockquote
+          cite="https://en.wikipedia.org/wiki/Jean_de_La_Bruy%C3%A8re"
+        >
+          <h1>
+            <q>Logic is the technique by which we add conviction to truth.</q>
+          </h1>
+          <h2><i>-- Jean de la Bruyere</i></h2>
+        </blockquote>
       </div>
     </header>
-    <div class="div1">Div 1</div>
-    <div class="div2">Div 2</div>
-    <div class="div3">Div 3</div>
-    <div class="div4">Div 4</div>
+
+    <!-- CONTENT BEGINS HERE -->
+    <div class="content">
+      <!-- ====================== -->
+
+      <!-- CONTACT SECTION 1-->
+      <section class="contact_section1" style="border: 2px solid yellow">
+        <h2>Join our Mailing List!</h2>
+        <p>
+          If you join our mailing list, you will get exclusive information
+          regarding upcoming events, assignments, and well... more events! Be
+          the first to be “in the know”.
+        </p>
+        <br />
+        <fieldset>
+          <legend>Please use the form below :</legend>
+          <form action="https://turtle.com/" method="post">
+            <label for="user_email"> Please enter your email address:</label>
+            <input
+              type="email"
+              name="email_address"
+              size="25"
+              maxlength="40"
+              placeholder="email address"
+            /><button>Submit</button>
+          </form>
+        </fieldset>
+      </section>
+
+      <!-- CONTACT SECTION 2-->
+
+      <section class="contact_section2" style="border: 2px solid red">
+        <address>
+          <li>Simplified Finance</li>
+          <li>123 Main Street</li>
+          <li>San Jose, CA 95119</li>
+          <li>
+            <a href="mailto:john.jones@gmail.com">john.jones@gmail.com></a>
+          </li>
+        </address>
+        <br />
+        <!-- add an iframe tag here - you can use exact code from page 189-->
+        <iframe
+          width="450"
+          height="350"
+          src="https://maps.google.com/maps?q=123+market+street+san+jose+ca&amp;output=embed"
+        >
+        </iframe>
+      </section>
+
+      <!-- CONTACT SECTION 3-->
+
+      <section class="contact_section3" style="border: 2px solid orange">
+        <p>Which is your favorite style of music?</p>
+        <form action="https://turtle.com/" method="get">
+          <input type="radio" name="genre" value="Rock" checked="checked" />Rock
+          <input type="radio" name="genre" value="Jazz" />Jazz
+          <input type="radio" name="genre" value="Classical" />Classical
+        </form>
+        <br>
+        <h3>3) a simple TEXT AREA input form...</h3>
+    <p>
+      <em
+        >another input type is 'textarea'. this allows for multiple lines of
+        text. <br />
+        oddly, this takes an opening and a closing tag, both of which are
+        between the 'form' tags</em
+      >
+    </p>
+    <form action="https://geoffhough.com/" method="get">
+      <p>Enter some lines of text :</p>
+      <textarea
+        name="comments"
+        id="A11"
+        cols="20"
+        rows="5"
+        placeholder="using disapearing placeholder method"
+      ></textarea>
+    </form>
+      </section>
+
+      <!-- CONTENT ENDS HERE -->
+    </div>
+
     <footer>BOTTOM BOX</footer>
   </body>
 </html>

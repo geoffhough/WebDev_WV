@@ -26,7 +26,7 @@ html {
  to follow (will try to adjust only for font size and arrangement of boxes).
 ================================================================ */
 
-* {
+html {
   background: rgb(255, 252, 252);
   background: linear-gradient(
     90deg,
