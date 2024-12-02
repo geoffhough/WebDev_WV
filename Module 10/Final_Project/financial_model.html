@@ -10,28 +10,216 @@
     <header id="top_of_page">
       <nav>
         <li class="nav_bar">
-          <a href="index.html"><img id="nav_logo" src="images/simfin_logo.png" alt="company_logo" /></a>
+          <a href="index.html"
+            ><img id="nav_logo" src="images/simfin_logo.png" alt="company_logo"
+          /></a>
         </li>
         <li class="nav_bar"><a href="index.html">Home</a></li>
         <li class="nav_bar"><a href="our_approach.html">Our Approach</a></li>
-        <li class="nav_bar"><a href="financial_model.html">Financial Model</a></li>
+        <li class="nav_bar">
+          <a href="financial_model.html">Financial Model</a>
+        </li>
         <li class="nav_bar"><a href="about_us.html">About Us</a></li>
         <li class="nav_bar"><a href="contact.html">Contact</a></li>
       </nav>
       <br />
       <div class="header_div">
-        <blockquote cite="https://en.wikipedia.org/wiki/Jean_de_La_Bruy%C3%A8re">
-        <h1><q>Logic is the technique by which we add conviction to truth.</q></h1>
-        <h2><i>-- Jean de la Bruyere</i></h2>
-      </blockquote>
+        <blockquote
+          cite="https://en.wikipedia.org/wiki/Jean_de_La_Bruy%C3%A8re"
+        >
+          <h1>
+            <q>Logic is the technique by which we add conviction to truth.</q>
+          </h1>
+          <h2><i>-- Winston de la Bruyere</i></h2>
+        </blockquote>
       </div>
     </header>
-    <div class="div1">Div 1</div>
-    <div class="div2">Div 2</div>
-    <div class="div3">Div 3</div>
-    <div class="div4">Div 4</div>
+
+    <!-- CONTENT BEGINS HERE -->
+    <div class="content">
+      <!-- ====================== -->
+
+      <!-- FINANCIAL MODEL SECTION 1-->
+      <section class="finmodel_section1">
+        <h2>Instructions</h2>
+        <article>
+          <b>1</b> - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Velit, placeat eius recusandae voluptas rerum tempore numquam
+          voluptatum repellat voluptates! Quibusdam, consequatur explicabo
+          sapiente sequi ad libero dolore aliquam ab nulla?
+        </article>
+        <br />
+        <article>
+          <b>2</b> - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Velit, placeat eius recusandae voluptas rerum tempore numquam
+          voluptatum repellat voluptates! Quibusdam, consequatur explicabo
+          sapiente sequi ad libero dolore aliquam ab nulla?
+        </article>
+        <br />
+        <article>
+          <b>3</b> - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Velit, placeat eius recusandae voluptas rerum tempore numquam
+          voluptatum repellat voluptates! Quibusdam, consequatur explicabo
+          sapiente sequi ad libero dolore aliquam ab nulla?
+        </article>
+        <br />
+        <article>
+          <b>4</b> - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Velit, placeat eius recusandae voluptas rerum tempore numquam
+          voluptatum repellat voluptates! Quibusdam, consequatur explicabo
+          sapiente sequi ad libero dolore aliquam ab nulla?
+        </article>
+        <br />
+        <article>
+          <b>5</b> - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Velit, placeat eius recusandae voluptas rerum tempore numquam
+          voluptatum repellat voluptates! Quibusdam, consequatur explicabo
+          sapiente sequi ad libero dolore aliquam ab nulla?
+        </article>
+      </section>
+
+      <!-- FINANCIAL MODEL SECTION 2-->
+
+      <section class="finmodel_section2">
+        <h2>Financial Model Inputs</h2>
+        <fieldset>
+          <legend>Please enter values below :</legend>
+          <p>All values are required.</p>
+          <br />
+          <form action="https://simfin.com/" method="get">
+            <label for="retirement_age">
+              <input
+                type="number"
+                name="retirement_age"
+                placeholder="65"
+                required="required"
+              />
+              - - Age (in years) at expected Retirement</label
+            >
+            <br />
+            <br />
+            <label for="initial_savings">
+              <input
+                type="number"
+                name="initial_savings"
+                placeholder="75000"
+                required="required"
+              />
+              - - Total Savings (in $'s) at Retirement</label
+            >
+            <br />
+            <br />
+            <label for="percent_stocks">
+              <input
+                type="number"
+                name="percent_stocks"
+                placeholder="70"
+                required="required"
+              />
+              - - % of Savings to be Invested in Stocks</label
+            >
+            <br />
+            <br />
+            <label for="retirement_income">
+              <input
+                type="number"
+                name="retirement_income"
+                placeholder="25000"
+                required="required"
+              />' - - Retirement Income from working, SSA, pensions, etc. (in
+              $'s)</label
+            >
+            <br />
+            <br />
+            <label for="income_growth">
+              <input
+                type="number"
+                name="income_growth"
+                placeholder="2.5"
+                required="required"
+              />
+              - - Expected annual % growth in Retirement Income (above)</label
+            >
+            <br />
+            <br />
+            <label for="retirement_expenses">
+              <input
+                type="number"
+                name="retirement_expenses"
+                placeholder="37500"
+                required="required"
+              />
+              - - Expected annual expenses at retirement (in $'s)</label
+            >
+            <br />
+            <br />
+            <label for="inflation_rate">
+              <input
+                type="number"
+                name="inflation_rate"
+                placeholder="3.5"
+                required="required"
+              />
+              - - % rate of expected annual Inflation</label
+            >
+            <br />
+            <br />
+            <label for="tax_rate">
+              <input
+                type="number"
+                name="tax_rate"
+                placeholder="18"
+                required="required"
+              />
+              - - Expected overall annual rate of taxation (in %'s)</label
+            >
+
+            <br /><br />
+            <p>
+              <b> Submit values and run model:</b> <br />
+              <br />
+              <button>Submit & Run</button>
+            </p>
+          </form>
+        </fieldset>
+      </section>
+
+      <!-- FINANCIAL MODEL SECTION 3-->
+      <section class="finmodel_section3">
+        <h2>Model Output / Graph</h2>
+        <img class="model_output" src="images/model_output_placeholder.png" />
+      </section>
+
+      <!-- FINANCIAL MODEL SECTION 4-->
+      <section class="finmodel_section4">
+        <h2>Model Assumptions and Disclaimer</h2>
+        <article>
+          <b>A</b> - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Velit, placeat eius recusandae voluptas rerum tempore numquam
+          voluptatum repellat voluptates! Quibusdam, consequatur explicabo
+          sapiente sequi ad libero dolore aliquam ab nulla?
+        </article>
+        <br />
+        <article>
+          <b>B</b> - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Velit, placeat eius recusandae voluptas rerum tempore numquam
+          voluptatum repellat voluptates! Quibusdam, consequatur explicabo
+          sapiente sequi ad libero dolore aliquam ab nulla?
+        </article>
+        <br />
+        <article>
+          <b>C</b> - Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Velit, placeat eius recusandae voluptas rerum tempore numquam
+          voluptatum repellat voluptates! Quibusdam, consequatur explicabo
+          sapiente sequi ad libero dolore aliquam ab nulla?
+        </article>
+      </section>
+
+      <!-- CONTENT ENDS HERE -->
+    </div>
+
     <footer>
       <p><a href="#top_of_page">Back to the Top of Page</a></p>
-</footer>
+    </footer>
   </body>
 </html>

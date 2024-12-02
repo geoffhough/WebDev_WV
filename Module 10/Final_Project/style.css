@@ -163,7 +163,6 @@ img.about_us_simfin_logo {
   border-radius: 5px;
   float: center;
   margin: 2%;
- 
 }
 
 section.aboutme_section2 {
@@ -176,121 +175,132 @@ section.aboutme_section2 {
 }
 
 img.winston_photo {
-  width: 18%;
+  width: 90%;
+  border-radius: 3px;
+}
+
+
+figure.winston_photo {
+  width: 22%;
   box-shadow: 2px 2px 2px 2px rgb(78, 77, 77);
   border-radius: 5px;
   float: right;
-  margin: 1% 7%;
+  margin: 0% 2%;
+  padding: 1%;
+  text-align: center;
+  overflow: auto;
+}
+
+
+/* Content Styling - FINANCIAL MODEL  */
+/* ======================================= */
+
+section.finmodel_section1 {
+  width: 38%;
+  margin: 1%;
+  padding: 3%;
+  border: 2px solid rgba(174, 176, 195, 0.043);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+section.finmodel_section2 {
+  width: 58%;
+  margin: 1%;
+  padding: 3%;
+  border: 2px solid rgba(174, 176, 195, 0.043);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+section.finmodel_section3 {
+  width: 95%;
+  margin: 1%;
+  padding: 3%;
+  border: 2px solid rgba(174, 176, 195, 0.043);
+  border-radius: 5px;
+  justify-content: space-around;
+}
+
+img.model_output {
+  width: 70%;
+  box-shadow: 2px 2px 2px 2px rgb(78, 77, 77);
+  border-radius: 5px;
+  margin-left: 15%;
+}
+
+section.finmodel_section4 {
+  width: 95%;
+  margin: 1%;
+  padding: 3%;
+  border: 2px solid rgba(174, 176, 195, 0.043);
+  border-radius: 5px;
+  overflow: auto;
+}
+
+/* Content Styling - HOME PAGE  */
+/* ======================================= */
+
+section.home_section1 {
+  background: url(images/home_splash.jpg) no-repeat center center fixed;
+  background-size: 100%;
+  width: 101%;
+  height: 800px;
+  margin: -1%;
+  padding: -1%;
+  border: none;
+  border-radius: none;
+  text-align: center;
 }
 
 
 
-/* ******** ****************** */
+/* Content Styling - OUR APPROACH  */
+/* ======================================= */
 
-.div1 {
-  float: left;
-  height: 500px;
-  width: 20%;
-  border: 2px solid black;
-  background: rgb(19, 34, 94);
-  color: antiquewhite;
+section.approach_section1 {
+  width: 48%;
+  margin: 1%;
+  padding: 3%;
+  border: 2px solid rgba(174, 176, 195, 0.043);
+  border-radius: 5px;
+  overflow: auto;
 }
 
-.div2 {
-  float: left;
-  height: 500px;
-  width: 40%;
-  border: 2px solid black;
-  background: rgb(70, 108, 160);
+section.approach_section2 {
+  width: 48%;
+  margin: 1%;
+  padding: 3%;
+  border: 2px solid rgba(174, 176, 195, 0.043);
+  border-radius: 5px;
+  overflow: auto;
 }
 
-.div3 {
-  float: left;
-  height: 500px;
-  width: 20%;
-  border: 2px solid black;
-  background: rgb(123, 136, 174);
+img.future_animation {
+  width: 95%;
+  box-shadow: 2px 2px 2px 2px rgb(78, 77, 77);
+  border-radius: 5px;
+  float: center;
+  margin: 2%;
 }
 
-.div4 {
-  float: left;
-  height: 500px;
-  width: 20%;
-  border: 2px solid black;
-  background: rgb(117, 117, 151);
-}
 
-/* Sizing for TABLET below. 581px — 868px.  GREEN theme.
+
+/* Sizing for TABLET below. 581px — 868px.  
 ============================== */
 
 @media (min-width: 581px) and (max-width: 868px) {
   * {
-    font-size: 3rem;
-    color: rgb(218, 227, 159);
-  }
-
-  .div1 {
-    width: 33.3333%;
-    background: rgb(25, 74, 6);
-  }
-
-  .div2 {
-    width: 33.3333%;
-    background: rgb(44, 147, 50);
-  }
-
-  .div3 {
-    width: 33.3333%;
-    background: rgb(73, 130, 76);
-  }
-
-  .div4 {
-    width: 100%;
-    background: rgb(110, 158, 104);
-  }
-
-  footer,
-  header {
-    background: #107a30;
+    font-size: 2rem;
   }
 }
 
-/* Sizing for MOBILE below. 580px.  PINK theme.
+/* Sizing for MOBILE below. 580px.  
 ============================== */
 
 @media (max-width: 580px) {
   * {
-    font-size: 2rem;
-    color: rgb(249, 246, 249);
-  }
-
-  .div1 {
-    float: left;
-    width: 100%;
-    background: rgb(187, 150, 183);
-  }
-
-  .div2 {
-    width: 50%;
-    float: left;
-    background: rgb(132, 88, 125);
-  }
-
-  .div3 {
-    float: left;
-    width: 50%;
-    background: rgb(197, 80, 207);
-  }
-
-  .div4 {
-    float: left;
-    width: 100%;
-    background: rgb(225, 25, 185);
-  }
-
-  footer,
-  header {
-    background: rgb(136, 7, 121);
+    font-size: 1.5rem;
   }
 }
 
