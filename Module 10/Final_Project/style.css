@@ -134,7 +134,8 @@ li {
 
 input,
 button,
-textarea {
+textarea,
+figure {
   font-size: inherit;
   box-shadow: 2px 2px 5px 2px gray;
   font-family: "Roboto", sans-serif;
@@ -179,7 +180,6 @@ img.winston_photo {
   border-radius: 3px;
 }
 
-
 figure.winston_photo {
   width: 22%;
   box-shadow: 2px 2px 2px 2px rgb(78, 77, 77);
@@ -190,7 +190,6 @@ figure.winston_photo {
   text-align: center;
   overflow: auto;
 }
-
 
 /* Content Styling - FINANCIAL MODEL  */
 /* ======================================= */
@@ -253,8 +252,6 @@ section.home_section1 {
   text-align: center;
 }
 
-
-
 /* Content Styling - OUR APPROACH  */
 /* ======================================= */
 
@@ -283,8 +280,6 @@ img.future_animation {
   float: center;
   margin: 2%;
 }
-
-
 
 /* Sizing for TABLET below. 581px — 868px.  
 ============================== */
