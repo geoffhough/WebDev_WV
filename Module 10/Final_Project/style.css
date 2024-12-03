@@ -241,7 +241,7 @@ section.finmodel_section4 {
 /* ======================================= */
 
 section.home_section1 {
-  background: url(images/home_splash.jpg) no-repeat center center fixed;
+  background: url(images/home_splash.jpg) no-repeat center center scroll;
   background-size: 100%;
   width: 101%;
   height: 800px;
