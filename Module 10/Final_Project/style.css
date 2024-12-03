@@ -286,7 +286,15 @@ img.future_animation {
 
 @media (min-width: 581px) and (max-width: 868px) {
   * {
+    font-size: 1.5rem;
+  }
+
+  h1 {
     font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
   }
 }
 
@@ -295,7 +303,21 @@ img.future_animation {
 
 @media (max-width: 580px) {
   * {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
+  }
+
+  h1 {
+    font-size: 1.35rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+  li.nav_bar {
+    margin: 0.25%;
+  }
+  #nav_logo {
+    margin-right: 1%;
   }
 }
 
