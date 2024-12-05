@@ -90,8 +90,9 @@ li.nav_bar {
 div.header_div {
   text-align: center;
   width: 100%;
-  padding: 2%;
+  padding: 1%;
   margin-top: 6%;
+  margin-bottom: -1%;
 }
 
 h1 {
@@ -240,16 +241,17 @@ section.finmodel_section4 {
 /* Content Styling - HOME PAGE  */
 /* ======================================= */
 
-section.home_section1 {
-  background: url(images/home_splash.jpg) no-repeat center center scroll;
+body.home_section1 {
+  background: url(images/home_splash.jpg) no-repeat top center fixed;
   background-size: 100%;
-  width: 101%;
-  height: 800px;
-  margin: -1%;
-  padding: -1%;
+  width: 100%;
+  height: 180rem;
+  top margin: 10rem;
+  padding: 0%;
   border: none;
   border-radius: none;
   text-align: center;
+  
 }
 
 /* Content Styling - OUR APPROACH  */
@@ -303,15 +305,15 @@ img.future_animation {
 
 @media (max-width: 580px) {
   * {
-    font-size: 1.15rem;
+    font-size: .85rem;
   }
 
   h1 {
-    font-size: 1.35rem;
+    font-size: 1.15rem;
   }
 
   h2 {
-    font-size: 1.25rem;
+    font-size: .9rem;
   }
   li.nav_bar {
     margin: 0.25%;
